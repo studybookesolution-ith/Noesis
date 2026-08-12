@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- 1. PREVENT MOBILE BROWSER CACHING (Guarantees users always fetch the freshest code) -->
+    <!-- 1. ANTI-CACHE CONFIGURATION (Forces mobile Chrome to fetch fresh configurations) -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -67,15 +67,14 @@
         }
     </style>
     <script>
-        // 2. ANTI-GLITCH REDIRECTION SYSTEM
+        // 2. AUTOMATIC REDIRECTION INTERCEPTOR
         (function() {
-            // Uses '/a/~/' path structure to break multi-account account loops on mobile Chrome
-            var secureTargetUrl = "https://google.com";
+            // YOUR EXACT APPS SCRIPT URL IS DIRECTLY EMBEDDED RIGHT HERE:
+            var secureTargetUrl = "https://script.google.com/macros/s/AKfycbx8mr-yRl0557XRPmUy83rD8ihyqsmH4ZfS1G2Ml8vgg_FVXxayMHMTd_i8DFJQiAVd/exec";
             
-            // Execute as soon as DOM is ready, don't wait for heavy external resources
             document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(function() {
-                    // .replace() wipes the cache history state so the mobile hardware back-button works normally
+                    // Wipes history tracking state to keep browser nav from locking up
                     window.location.replace(secureTargetUrl);
                 }, 150);
             });
@@ -89,8 +88,8 @@
         <h2>Opening Noesis</h2>
         <p>Connecting securely to Google Apps Script...</p>
         
-        <!-- 3. HUMAN-TAP FALLBACK (Bypasses 100% of aggressive mobile browser script blocks) -->
-        <a class="btn" href="https://google.com">
+        <!-- 3. EMERGENCY MANUAL LINK (YOUR EXACT URL IS ALSO EMBEDDED HERE) -->
+        <a class="btn" href="https://script.google.com/macros/s/AKfycbx8mr-yRl0557XRPmUy83rD8ihyqsmH4ZfS1G2Ml8vgg_FVXxayMHMTd_i8DFJQiAVd/exec">
             Click here if page hangs
         </a>
     </div>
