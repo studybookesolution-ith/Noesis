@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbx8mr-yRl0557XRPmUy83rD8ihyqsmH4ZfS1G2Ml8vgg_FVXxayMHMTd_i8DFJQiAVd/exec">
-<title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting to Noesis...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        // JavaScript redirection handles mobile browsers much better than meta-refresh
+        window.location.replace("https://script.google.com/macros/s/AKfycbx8mr-yRl0557XRPmUy83rD8ihyqsmH4ZfS1G2Ml8vgg_FVXxayMHMTd_i8DFJQiAVd/exec");
+    </script>
 </head>
-<body></body>
+<body>
+
+    <div class="loader"></div>
+    <p>Opening your application...</p>
+    <!-- Fallback link in case the mobile browser blocks automated redirection -->
+    <a href="https://script.google.com/macros/s/AKfycbx8mr-yRl0557XRPmUy83rD8ihyqsmH4ZfS1G2Ml8vgg_FVXxayMHMTd_i8DFJQiAVd/exec">Click here if not redirected</a>
+
+</body>
 </html>
